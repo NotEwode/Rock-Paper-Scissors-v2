@@ -220,6 +220,10 @@
     }
 
       function playGame(playerMove) {
+        clearInterval(intervalId);
+        isAutoPlaying = false;
+        document.querySelector(".autoPlay")
+        .innerHTML = `Auto-Play`;
         const computerMove = pickComputerMove();
 
         let result = "";
