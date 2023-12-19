@@ -220,12 +220,8 @@
     }
 
       function playGame(playerMove) {
-        clearInterval(intervalId);
-        isAutoPlaying = false;
-        document.querySelector(".autoPlay")
-        .innerHTML = `Auto-Play`;
-        const computerMove = pickComputerMove();
 
+        const computerMove = pickComputerMove();
         let result = "";
 
         if (playerMove === "scissors") {
